@@ -14,7 +14,8 @@ function App() {
           <li className="navbar-item hide-login"><button id="button-login">Login</button></li>
           <li className="navbar-item hide-login"><button id="button-register">Register</button></li>
           <li className="navbar-item show-login"><button id="button-profile">Profile</button></li>
-          <li className="navbar-item show-login"><button id="button-recipes">Recipes</button></li>
+          <li className="navbar-item show-login on-recipes-page"><button id="button-recipes">Recipes</button></li>
+          <li className="navbar-item show-login on-recipes-page"><button id="button-add-recipe">Add Recipe</button></li>
         </ul>
        </nav>
 
@@ -66,8 +67,20 @@ function App() {
        </div>
 
        <div id="recipe-box">
-        <h2 className="box-title">Recipes</h2>
-
+        <h2 className="box-title">Add new recipe</h2>
+        <div id="profile-grid">
+          <div className='profile-column width-25'>
+            <img id='food-icon'></img>
+          </div>
+          <div className='profile-column width-55'>
+          <input type='text' className='form-input' placeholder='Recipe name:' name='recipe-name' required></input>
+          <hr></hr>
+          <input type='text' className='form-input' placeholder='Details:' name='recipe-detials' required></input>
+          <hr></hr>
+          <input type='text' className='form-input' placeholder='Rating:' name='recipe-rating' required></input>
+          <hr></hr>
+          </div>
+        </div>
        </div>
     </>
   )

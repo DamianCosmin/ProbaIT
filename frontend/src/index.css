@@ -228,3 +228,8 @@ h1 {
   z-index: 10;
   display: none;
 }
+
+#food-icon{
+  content: url('/food_icon.png');
+  object-fit: contain;
+}
